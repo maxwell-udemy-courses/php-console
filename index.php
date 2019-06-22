@@ -22,8 +22,13 @@
     <div class="container">
         <div class="row">
             <div class="p-3 m-2 bg-primary text-white">
-                <?php
-                    echo "hola";
+                <?php 
+                    /*
+                     * Esto imprime dos saludos,
+                     * y ademas agrega un break <br>.
+                    */
+                    echo "hola como estas? <br>";
+                    echo "hola!!";
                 ?>
             </div>
         </div>
