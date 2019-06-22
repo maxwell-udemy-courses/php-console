@@ -23,12 +23,13 @@
         <div class="row">
             <div class="p-3 m-2 bg-primary text-white">
                 <?php 
-                    /*
-                     * Esto imprime dos saludos,
-                     * y ademas agrega un break <br>.
-                    */
-                    echo "hola como estas? <br>";
-                    echo "hola!!";
+                    $name = "Max";
+                    $isOld = true;
+                    $year = 1990;
+                    $km = 54.4; 
+
+                    echo "Hola " . $name . ", naciste en el año " . $year . ", y estas a " . $km . " kilometros." . "<br>";
+                    echo "La variable name es de tipo: " . gettype($name);
                 ?>
             </div>
         </div>
