@@ -21,6 +21,47 @@
 
     <div class="container">
         <div class="row">
+            <div class="col-4">
+                <div class="p-3 m-2 bg-primary text-white">
+                    <h4>Clase: Arrays</h4> <br>
+                    <?php
+                        $nums = array(1,4,6,7);
+
+                        for($i = 0; $i < count($nums); $i++){
+                            echo $nums[$i] . "<br>";
+                        }
+                    ?>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="p-3 m-2 bg-success text-white">
+                    <h4>Clase: Arrays</h4> <br>
+                    <?php
+                        $names = array("Max", "Tom", "Sarah", "Rocky");
+
+                        for($i = 0; $i < count($names); $i++){
+                            echo $names[$i] . "<br>";
+                        }
+                    ?>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="p-3 m-2 bg-info text-white">
+                    <h4>Clase: Foreach</h4> <br>
+                    <?php
+                        $names = array("Max", "Tom", "Sarah", "Rocky");
+
+                        foreach($names as $name){
+                            echo $name . "<br>";
+                        }
+                    ?>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
             <div class="col-6">
                 <div class="p-3 m-2 bg-success text-white">
                     <h3>Clase: Bucle While</h3> <br>
