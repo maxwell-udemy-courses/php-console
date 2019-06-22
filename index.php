@@ -21,16 +21,41 @@
 
     <div class="container">
         <div class="row">
-            <div class="p-3 m-2 bg-primary text-white">
-                <?php 
-                    $name = "Max";
-                    $isOld = true;
-                    $year = 1990;
-                    $km = 54.4; 
+            <div class="col-12">
+                <div class="p-3 m-2 bg-info text-white">
+                    <h3>Clase: Operadores</h3> <br>
+                    <?php 
+                        $num1 = 1;
+                        $num2 = 3;
+                        //$resultado = $num1 + $num2;
 
-                    echo "Hola " . $name . ", naciste en el año " . $year . ", y estas a " . $km . " kilometros." . "<br>";
-                    echo "La variable name es de tipo: " . gettype($name);
-                ?>
+                        $num1++;
+                        //$num2--;
+
+                        echo "El resultado de la suma es: " . ($num1 + $num2) . "<br>";
+                        echo "El resultado de la resta es: " . ($num1 - $num2) . "<br>";
+                        echo "El resultado de la multiplicacion es: " . ($num1 * $num2) . "<br>";
+                        echo "El resultado de la division es: " . ($num1 / $num2) . "<br>";
+                        echo "El resultado del modulo es: " . ($num1 % $num2) . "<br>";
+                    ?>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="p-3 m-2 bg-primary text-white">
+                    <h3>Clase: Variables y tipos de datos</h3> <br>
+                    <?php 
+                        $name = "Max";
+                        $isOld = true;
+                        $year = 1990;
+                        $km = 54.4; 
+
+                        echo "Hola " . $name . ", naciste en el año " . $year . ", y estas a " . $km . " kilometros." . "<br>";
+                        echo "La variable name es de tipo: " . gettype($name);
+                    ?>
+                </div>
             </div>
         </div>
     </div>
