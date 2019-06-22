@@ -21,6 +21,32 @@
 
     <div class="container">
         <div class="row">
+            <div class="col-6">
+                <div class="p-3 m-2 bg-success text-white">
+                    <h3>Clase: Bucle While</h3> <br>
+                    <?php
+                        $num = 0;
+
+                        while($num <= 5){
+                            echo "El numero es: " . $num . "<br>";
+                            $num++;
+                        }
+                    ?>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="p-3 m-2 bg-warning text-white">
+                    <h3>Clase: Bucle For</h3> <br>
+                    <?php
+                        for($i = 0; $i <= 5; $i++){
+                            echo "El numero es: " . $i . "<br>";
+                        }
+                    ?>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
             <div class="col-12">
                 <div class="p-3 m-2 bg-info text-white">
                     <h3>Clase: Condicional SWITCH</h3> <br>
@@ -47,7 +73,7 @@
                             default:
                                 echo "La calificación no es válida";
                         }
-                        
+
                         /*
                         if($num == 1){
                             echo "La calificación es muy baja";
