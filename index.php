@@ -23,6 +23,78 @@
         <div class="row">
             <div class="col-12">
                 <div class="p-3 m-2 bg-info text-white">
+                    <h3>Clase: Condicional SWITCH</h3> <br>
+                    <?php
+                        $num = 8;
+
+                        switch($num){
+                            case 1:
+                                echo "La calificación es muy baja";
+                                break;
+                            case 2:
+                            case 4:
+                                echo "La calificación sigue siendo baja!";
+                                break;
+                            case 6:
+                                echo "La calificación es mediocre!";
+                                break;
+                            case 8:
+                                echo "La calificación es buena!";
+                                break;
+                            case 10:
+                                echo "La calificación es excelente!";
+                                break;
+                            default:
+                                echo "La calificación no es válida";
+                        }
+                        
+                        /*
+                        if($num == 1){
+                            echo "La calificación es muy baja";
+                        } else if($num == 2 || $num == 4) {
+                            echo "La calificación sigue siendo baja!";
+                        } else if($num == 6) {
+                            echo "La calificación es mediocre!";
+                        } else if($num == 8) {
+                            echo "La calificación es buena!";
+                        } else if($num == 10) {
+                            echo "La calificación es excelente!";
+                        } else {
+                            echo "La calificación no es válida";
+                        }
+                        */
+                    ?>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="p-3 m-2 bg-primary text-white">
+                    <h3>Clase: Condicional IF</h3> <br>
+                    <?php
+                        $name = "Max";
+                        $year = 2991;
+
+                        if($year > 1950 && $year < 2019){
+                            echo "Estas viviendo en esta epoca! <br>";
+                        }
+
+                        if($name == "Max" && $year == 1990){
+                            echo "Sos el indicado!";
+                        } else if ($name == "Maxi" && $year < 2019) {
+                            echo "Podrías ser el indicado...";
+                        } else {
+                            echo "No sos el indicado...";
+                        }
+                    ?>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="p-3 m-2 bg-info text-white">
                     <h3>Clase: Operadores</h3> <br>
                     <?php 
                         $num1 = 1;
