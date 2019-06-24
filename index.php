@@ -22,6 +22,81 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
+                <div class="p-3 m-2 bg-info text-white">
+                    <h4>Herencia</h4> <br>
+                    <?php
+                        class Masscota {
+                            public $nombre;
+                            public $patas;
+
+                            function __construct($nombre, $patas){
+                                $this->nombre = $nombre;
+                                $this->patas = $patas;
+                            }
+
+                            function eat(){
+                                return "Estoy comiendo!";
+                            }
+                        }
+
+                        class Perro extends Masscota {
+                            function run(){
+                                return "Estoy corriendo!";
+                            }
+                        }
+
+                        class Gato extends Masscota {
+
+                        }
+
+                        $tommy = new Perro("Tommy", 4);
+                        $rocky = new Gato("Rocky", 4);
+
+                        echo $tommy->run() . "<br>";
+                        echo $rocky->eat() . "<br>";
+                    ?>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="p-3 m-2 bg-success text-white">
+                    <h4>POO</h4> <br>
+                    <?php
+                        class Mascota {
+                            public $nombre;
+                            public $tipo;
+                            public $patas;
+
+                            function __construct($nombre, $tipo, $patas){
+                                $this->nombre = $nombre;
+                                $this->tipo = $tipo;
+                                $this->patas = $patas;
+                            }
+
+                            public function getDesc(){
+                                if($this->patas == 0){
+                                    return "Tu mascota es un " . $this->tipo . " y se llama " . $this->nombre . " y no tiene patas.";
+                                } else {
+                                    return "Tu mascota es un " . $this->tipo . " y se llama " . $this->nombre . " y tiene " . $this->patas . " patas.";
+                                }
+                            }
+                        }
+
+                        $perro = new Mascota("Tommy", "perro", 4);
+                        $gato = new Mascota("Sarah", "gato", 4);
+                        $pez = new Mascota("Flipy", "pez", 0);
+
+                        echo $perro->getDesc() . "<br>";
+                        echo $gato->getDesc() . "<br>";
+                        echo $pez->getDesc();
+                    ?>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
                 <div class="p-3 m-2 bg-warning text-white">
                     <h4>Funciones</h4> <br>
                     <?php
