@@ -21,6 +21,22 @@
 
     <div class="container">
 
+        <?php include('person.php'); ?>
+
+        <div class="row">
+                <div class="col-12">
+                    <div class="p-3 m-2 bg-dark text-white">
+                        <h4>Include</h4> <br>
+
+                        <?php
+                            $person = new Person("Max", "Tompson");
+
+                            echo $person->greetings();
+                        ?>
+                    </div>
+                </div>
+        </div>
+
         <div class="row">
                 <div class="col-6">
                     <div class="p-3 m-2 bg-info text-white">
